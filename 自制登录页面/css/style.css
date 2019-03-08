@@ -16,7 +16,7 @@ body{font:12px/1.5 Microsoft YaHei;position:relative;margin:0 auto;color:#000}
     position: relative;
 }
 
-.login{background: #0c7fc2 url(../images/background.png) no-repeat center top ;height:900px;text-align:center;}
+.login{background: #0c7fc2 url(../images/background.png) no-repeat center top ;height:1080px;text-align:center;}
 .login_hd1{position: absolute;top: 0;bottom: 0;left:0;right:0;margin:auto;width:fit-content;height: fit-content;}
 .login_hd{background: url(../images/logo.PNG) no-repeat center top;width:570px;height:120px}
 .login_banner{background:url(../images/subtitle.PNG)no-repeat center top;background-size:350px 74px;width: 350px;height:74px;margin:0 auto}
