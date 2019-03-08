@@ -1,0 +1,37 @@
+*{margin:0;padding: 0}
+li{list-style: none}
+img{vertical-align: top;border:none}
+legend{display: none}
+fieldset{border:none}
+a{text-decoration: none;color: #000000;}
+a:hover,a:active{text-decoration: none;color: #000000;}
+.clear{clear:both}
+
+body{font:16px/1.5 Microsoft YaHei;position:relative;margin:0 auto;color:#000}
+#container{
+    margin:0 40px;
+    overflow-x: hidden;
+    position: relative;
+}
+.bodytext{text-indent:2em;margin:0 0 20px 0}
+.topname{background-color: #b4dcff;height:160px;margin:20px 0}
+.topname h1{font-size:60px;position: relative;left:0;right:0;top:40px;bottom:0;margin:30px auto;width:fit-content;font:#00f;}
+.img{float:right;margin:0 30px 20px;width:424px;height:320px;}
+img{width:424px;height:320px;}
+hr{border:2px dotted #b4dcff;}
+#basicinfo{
+    border-collapse:collapse;
+    margin:20px 0;
+}
+#basicinfo td,#basicinfo #th{
+    text-align: center;
+    border:1px solid #b4dcff;
+}
+#basicinfo th{
+    background-color: #349af5;
+}
+.menu{float:right;margin:0 30px 20px 30px;width:300px;border-left:2px dotted #b4dcff;border-bottom:2px dotted #b4dcff;height:300px;}
+.menutext{position: relative;left:20px; top:20px;text-align: center;}
+h3 {font-size:32px;color: #349af5;margin:15px;}
+#84c4fe
+#b4dcff
