@@ -1,0 +1,35 @@
+*{margin:0;padding: 0}
+li{list-style: none}
+img{vertical-align: top;border:none}
+legend{display: none}
+fieldset{border:none}
+a{text-decoration: none}
+a:hover,a:active{text-decoration: none}
+.clear{clear:both}
+
+body{font:12px/1.5 Microsoft YaHei;position:relative;margin:0 auto;color:#000}
+#container{
+
+    box-shadow: 0 0 15px #999999;
+    margin:0 auto;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.login{background: #0c7fc2 url(../images/background.png) no-repeat center top ;height:900px;text-align:center;}
+.login_hd1{position: absolute;top: 0;bottom: 0;left:0;right:0;margin:auto;width:fit-content;height: fit-content;}
+.login_hd{background: url(../images/logo.PNG) no-repeat center top;width:570px;height:120px}
+.login_banner{background:url(../images/subtitle.PNG)no-repeat center top;background-size:350px 74px;width: 350px;height:74px;margin:0 auto}
+.login_main{background: url(../images/login.png) no-repeat center top;width:522px;height:247px; margin:0 auto;}
+.login_help {float:right;margin: 10px 25px;font-size:16px;font:sans-serif;color: #f8f8ff}
+.login_help a{columns: #f8f8ff;}
+.login_form{position:relative;height:fit-content;width: fit-content;}
+.username{height:57px;}
+.password{height:57px;}
+.username input,.password input{background-color: transparent;width:230px;height:32px;border:0;color: #999999;font-size:14px;line-height:32px;}
+.username input{position:absolute;top:60px;left:140px;}
+.password input{position:absolute;top:130px;left:140px;}
+.login_btn{text-align:center;height:42px;margin:0;position:absolute; top:190px;left:50px; }
+.login_btn input{background:url(../images/login_btn.png) no-repeat;border:0;width:200px;height:39px;background-size:200px 39px;cursor:pointer;text-indent:-9999px;*text-indent:0;*line-height:9999px;overflow:hidden}
+.guest_btn{text-align:center;height:42px;margin:0;position:absolute; top:190px;left:280px; }
+.guest_btn input{background:url(../images/guest_btn.png) no-repeat;border:0;width:200px;height:39px;background-size:200px 39px;cursor:pointer;text-indent:-9999px;*text-indent:0;*line-height:9999px;overflow:hidden}
