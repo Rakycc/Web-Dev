@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%;">
+
+<head>
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="stylesheet" href="https://res.wx.qq.com/open/libs/weui/2.0.0/weui.css">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{$who}的日程</title>
+    <meta name="description" content="{$who}日程">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="__STATIC__/assets/css/normalize.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/themify-icons.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/pe-icon-7-filled.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/flag-icon.min.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/cs-skin-elastic.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/lib/datatable/dataTables.bootstrap.min.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/style.css">
+    <link rel="stylesheet" href="__STATIC__/assets/css/sweetalert.css">
+</head>
+<!--其他样式-->
+
+<!--其他样式-->
+
+<body>
+
+
+<div class="weui-tab">
+    <div class="weui-tab__panel">
+        <div class="weui-panel weui-panel_access">
+                    {volist name="info" id="vo"}
+                    <a class="weui-cell  weui-cell_example">
+                        <div class=" weui-cell__ft">{$vo.week}</div>
+                        <div class=" weui-cell__ft">{$vo.time}</div>
+                        <div class=" weui-cell__ft">{$vo.place}</div>
+
+
+                          <div class=" weui-cell__ft">{$vo.item}</div>
+
+                          <div class="weui-media-box__desc">{$vo.note}</div>
+
+
+                    </a>
+                    {/volist}
+
+                    {volist name="info2" id="vo"}
+                    <a class="weui-cell  weui-cell_example">
+                        <div class=" weui-cell__ft">{$vo.week}</div>
+                        <div class=" weui-cell__ft">{$vo.time}</div>
+                        <div class=" weui-cell__ft">{$vo.place}</div>
+
+
+                            <div class=" weui-cell__ft">{$vo.item}</div>
+
+                            <div class="weui-media-box__desc">{$vo.note}</div>
+
+                       
+                    </a>
+                    {/volist}
+        </div>
+    </div>
+</div>
+
+
+
+
+</body>
+</html>
