@@ -1,0 +1,28 @@
+{extend name="common@public/base" /}
+{block name="main-content"}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <h2>用户表</h2>
+    <div class="table-responsive">
+        <table class="table table-striped table-sm">
+            <thead>
+            <tr>
+                <th>用户id</th>
+                <th>用户名</th>
+                <th>创建时间</th>
+                <th>更新时间</th>
+            </tr>
+            </thead>
+            <tbody>
+            {volist name="data" id="vo"}
+            <tr>
+                <td>{$vo.id}</td>
+                <td>{$vo.username}</td>
+                <td>{$vo.create_time}</td>
+                <td>{$vo.update_time}</td>
+            </tr>
+            {/volist}
+            </tbody>
+        </table>
+    </div>
+</main>
+{/block}

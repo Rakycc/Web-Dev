@@ -1,0 +1,21 @@
+<nav class="col-md-2 d-none d-md-block bg-light sidebar">
+    <div class="sidebar-sticky">
+        <ul class="nav flex-column">
+            {volist name="all_menu" id="menu"}
+            <li class="nav-item">
+                {if condition="$menu.id eq $menu_id"}
+                <a class="nav-link active" href={:url($menu.module."/".$menu.controller."/".$menu.action)}>
+                    <span data-feather="{$menu.icon}"></span>
+                    {$menu.description}
+                </a>
+                {else/}
+                <a class="nav-link" href={:url($menu.module."/".$menu.controller."/".$menu.action)}>
+                    <span data-feather="{$menu.icon}"></span>
+                    {$menu.description}
+                </a>
+                {/if}
+            </li>
+            {/volist}
+        </ul>
+    </div>
+</nav>

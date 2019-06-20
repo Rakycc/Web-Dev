@@ -1,0 +1,37 @@
+{extend name="common@public/base" /}
+{block name="main-content"}
+<main role="main" class="col-md-9 ml-sm-auto col-lg-10 pt-3 px-4">
+    <div class="text-center" style="width: 400px;margin: 50px auto">
+        <h1 class="h3 mb-3 font-weight-normal">修改标题</h1>
+        <label for="inputTitle" class="sr-only"></label>
+        <input type="text" id="inputTitle" class="form-control" placeholder="标题" autofocus>
+        <button class="btn btn-lg btn-primary btn-block" style="margin-top: 20px;" onclick="submitTitle()">提交</button>
+    </div>
+
+</main>
+
+{/block}
+{block name="scripts"}
+<script type="text/javascript">
+    function submitTitle() {
+        var title = $('#inputTitle').val();
+        if(title!==""){
+            $.ajax({
+                url: "{:url('Title/updateTitle')}",
+                type: "POST",
+                data: {"title":title},
+                success:function(data){
+                    alert(data.msg);
+                    window.location.reload();
+                },
+                error:function (msg) {
+                    console.log(msg);
+                }
+            });
+        }
+        else{
+            alert("请输入有效值");
+        }
+    }
+</script>
+{/block}

@@ -1,0 +1,31 @@
+{include file='common@public:header' /}
+<!--其他样式-->
+{block name="styles"}{/block}
+<!--其他样式结束-->
+</head>
+<body>
+<!--头部标题栏-->
+{include file='common@public:head_nav' /}
+<!--头部标题栏结束-->
+<div class="container-fluid">
+    <div class="row">
+        <!--左侧菜单栏-->
+        {include file='common@public:left_nav' /}
+        <!--左侧菜单栏结束-->
+        <!--主界面-->
+        {block name="main-content"}{/block}
+        <!--主界面结束-->
+    </div>
+</div>
+<script src="__STATIC__/js/jquery-3.4.0.min.js"></script>
+<script src="__STATIC__/js/bootstrap.min.js"></script>
+<!-- Icons -->
+<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
+<script>
+    feather.replace()
+</script>
+
+<!--其他引用的js文件-->
+{block name="scripts"}{/block}
+</body>
+</html>
